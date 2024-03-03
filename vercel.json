@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/pages/about.html",
-      "destination": "/pages"
+      "destination": "/about"
     },
     {
       "source": "/pages/invite.html",
