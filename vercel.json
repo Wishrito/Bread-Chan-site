@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    {
+      "source": "/pages/about.html",
+      "destination": "/pages"
+    },
+    {
+      "source": "/pages/invite.html",
+      "destination": "/invite"
+    }
+  ]
+}
