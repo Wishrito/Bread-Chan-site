@@ -41,13 +41,9 @@ body {
       color: #fff;
       transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-  }
- &input:focus+label span,
- &input:valid+label span {
-   color: lightblue;
-   transform: translateY(-30px);
+    }
 }
-}
+
 /* Style de base pour l'élément input */
 .search-bar input {
   width: 200px;
@@ -57,7 +53,11 @@ body {
   border-radius: 5px;
 }
 
-
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
 
 section {
   margin-top: 20px;
@@ -92,7 +92,7 @@ header {
 
 .navbar {
   overflow: hidden;
-  background-color: #fc5604;
+  background-color: #333;
   display: flex;
   &a {
     float: left;
@@ -103,20 +103,32 @@ header {
     text-decoration: none;
     transition: 0.75s;  
   }
-                &:hover {
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.75s;
+}
+
+.navbar a:hover {
   background-color: lightblue;
   transform: translateY(-5px)translateX(5px);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-  
-  
+}
 
-    &ul {
+.navbar ul {
   list-style: none;
   padding: 0;
-  &li {
+}
+
+.navbar ul li {
   display: inline;
   margin: 0 20px;
-  
 }
 
 .navbar-list#navbarList li:first-child a {
@@ -185,15 +197,17 @@ header {
 }
 
 footer {
-  background-color: #fc5604;
+  background-color: #333;
   color: #fff;
   text-align: center;
   padding: 10px 0;
-  &p a {
+}
+
+footer p a {
   text-decoration: none;
   color: inherit;
-  
 }
+
 .search-bar {
   display: flex;
   margin: auto;
