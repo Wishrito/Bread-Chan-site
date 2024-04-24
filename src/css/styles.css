@@ -92,7 +92,7 @@ header {
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #fc5604;
   display: flex;
   &a {
     float: left;
@@ -113,8 +113,7 @@ header {
     &ul {
   list-style: none;
   padding: 0;
-  
-    &li {
+  &li {
   display: inline;
   margin: 0 20px;
   
@@ -186,7 +185,7 @@ header {
 }
 
 footer {
-  background-color: #333;
+  background-color: #fc5604;
   color: #fff;
   text-align: center;
   padding: 10px 0;
